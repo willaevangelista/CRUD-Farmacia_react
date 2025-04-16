@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { DNA } from "react-loader-spinner";
-import { useNavigate } from "react-router-dom";
 import Categorias from "../../../models/Categoria";
 import CardCategorias from "../cardcategoria/CardCategorias"
 import { buscar } from "../../../services/Service";
@@ -8,8 +7,6 @@ import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 
 function ListaCategorias() {
-
-    const navigate = useNavigate();
     
     const [categorias, setCategorias] = useState<Categorias[]>([])
 
