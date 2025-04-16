@@ -1,14 +1,16 @@
+import ListaCategorias from "../../components/categorias/listacategoria/ListaCategorias"
+
 function Home() {
     return (
         <>
-            <div className="bg-indigo-900 flex justify-center">
+            <div className="bg-indigo-400 flex justify-center">
                 <div className='container grid grid-cols-2 text-white'>
                     <div className="flex flex-col gap-4 items-center justify-center py-4">
                         <h2 className='text-5xl font-bold'>
                             FarmaGen
                         </h2>
                         <p className='text-xl'>
-                            Se até seu deploy precisa de saúde, imagina você.
+                            A forma mais rápida, saúde e segura de cuidar da sua saúde de modo totalmente online.
                         </p>
                     </div>
 
@@ -21,6 +23,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <ListaCategorias />
         </>
     )
 }
